@@ -5,39 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.0/css/all.css"
-        integrity="sha384-REHJTs1r2ErKBuJB0fCK99gCYsVjwxHrSU0N7I1zl9vZbggVJXRMsv/sLlOAGb4M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="css/main.css">
     <title>Contact Me</title>
 </head>
 
 <body>
     <header>
-        <div class="menu-btn">
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-            <div class="btn-line"></div>
-        </div>
-
-        <nav class="menu">
-            <div class="menu-branding">
-                <div class="potrait"></div>
-            </div>
-            <ul class="menu-nav">
-                <li class="nav-item">
-                    <a href="index.html" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a href="about.html" class="nav-link">About Me</a>
-                </li>
-                <li class="nav-item">
-                    <a href="work.html" class="nav-link">My Work</a>
-                </li>
-                <li class="nav-item current">
-                    <a href="contact.html" class="nav-link">How To Reach Me</a>
-                </li>
-            </ul>
-        </nav>
+        <div include-html="header.html"></div>
     </header>
 
     <main id="contact">
@@ -59,7 +34,7 @@
     </main>
 
     <footer id="main-footer">
-        Copyright &copy; 2020
+        <div include-html="footer.html"></div>
     </footer>
 
     <script src="js/main.js"></script>
