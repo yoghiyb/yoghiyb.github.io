@@ -32,29 +32,6 @@ async function includeHTML() {
     }
 }
 
-// function includeHTML() {
-//     const elements = document.querySelectorAll('[include-html]')
-
-//     elements.forEach(async (el) => {
-//         const file = el.getAttribute('include-html')
-//         if (!file) return
-
-//         try {
-//             const response = await fetch(file)
-//             if (!response.ok) throw new Error("Gagal memuat ${file}")
-//             const content = await response.text()
-
-//             console.log("cek content: ", content)
-//             el.outerHTML = content
-
-//             el.removeAttribute('include-html');
-//         } catch(err) {
-//             el.innerHTML = "Error memuat file"
-//         }
-//     })
-// }
-// //includeHTML()
-
 document.addEventListener("DOMContentLoaded", () => {
     includeHTML();
 })
